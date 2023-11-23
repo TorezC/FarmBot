@@ -25,19 +25,20 @@ const Signup = () => {
         </div>
         <h5>Sign Up</h5>
         <p>Create an account</p>
-        <div></div>
-        <button className="btn flex">
-          <img src={google} alt="google" />
-          <p>Signup with Google</p>
-        </button>
-        <button className="btn flex">
-          <img src={apple} alt="apple" />
-          <p>Signup with Apple</p>
-        </button>
-        <button className="btn flex">
-          <img src={facebook} alt="facebook" />
-          <p>Signup with Facebook</p>
-        </button>
+        <div className="btn-header">
+          <button className="btn flex">
+            <img src={google} alt="google" />
+            <p>Signup with Google</p>
+          </button>
+          <button className="btn flex">
+            <img src={apple} alt="apple" />
+            <p>Signup with Apple</p>
+          </button>
+          <button className="btn flex">
+            <img src={facebook} alt="facebook" />
+            <p>Signup with Facebook</p>
+          </button>
+        </div>
         <p className="or">OR</p>
         <form>
           <div className="form-container flex">

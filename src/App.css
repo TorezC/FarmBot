@@ -8,7 +8,6 @@ a{
     margin:100px 0;
 }
 .container{
-    width:500px;
     margin:0 auto;
     display: flex;
     flex-direction: column;
@@ -16,7 +15,7 @@ a{
     align-items:center;
     justify-content:center;
 }
-.container > h5{
+.container > h5,.note-header h5{
     font-weight: 500;
     font-size:2rem;
     color: #151515;
@@ -25,15 +24,16 @@ a{
     width: 100px;
     height: 100px;
 }
-.container > p{
+.container > p,.note-header p{
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-size: 1rem;
     color:rgba(21, 21, 21, 1);
     margin:10px 0 50px;
+    text-align:center;
 }
 .btn{
-    padding: 10px 100px;
+    padding: 10px 20px;
     margin-bottom: 20px;
     border-radius: 8px;
     border: 1px solid #151515; 
@@ -47,20 +47,19 @@ a{
     transition:all .2s ease-in-out;
     width:100%;
 }
-.btn img{width:24px;height:24px;}
-.signup-btn,.login-btn{margin-top:20px;}
+/* .reset-header{} */
 .or{
     margin:10px 0!important;
     padding: 4px 0;
     font-family: 'Montserrat', sans-serif;
 }
-form{
+form input{
     width: 100%;
 }
 .form-container{
     flex-direction: column;
     text-align: left;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     font-family: 'Montserrat', sans-serif;
 }
 label{
@@ -132,13 +131,29 @@ button:hover{
 .link-right:hover, .link-bottom-btn:hover{
     color: #151515;
 }
-
+a{transition:all .2s ease-in-out;}
+.btn img{width:24px;height:24px;}
+.signup-btn,.login-btn{margin-top:20px;}
+form,.btn-header{width:400px;}
+.btn-header button{margin-top:0;}
+.success-note{margin-bottom:30px!important;}
+.return-btn-head{margin-top:15px;}
+.return-btn{font-size:calc(1rem);transition:all .2s ease-in-out;display:flex;align-items:center;}
+.return-btn i{margin-right:8px;position:relative;transition:all .2s ease-in-out;}
+.return-btn:hover i{transform:translateX(-5px);}
+.note-header{text-align:center;}
  
 /* media queries */
-@media (max-width: 500px){
-    .btn{
-        padding: 5px 70px;
-    }
+@media screen and (max-width: 500px){
+    .btn{padding: 10px 70px;}
+    form, .btn-header{width:90%;margin:0 auto;}
+    .auth-container{margin:80px 0 100px;}
+    .btn{padding: 10px 0px;}
+    .signup-btn, .login-btn{padding:10px 0px;}
+}
+@media screen and (max-width:300px) {
+    .btn{padding: 10px 0px;}
+    .signup-btn, .login-btn{padding:10px 0px;}
 }
 /* @media (min-width: 1024px){
     .btn{
