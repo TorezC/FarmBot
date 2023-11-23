@@ -29,7 +29,7 @@ const OtpVerification = () => {
             <div className="receive-otp">
                 <span className="link-bottom">Didn't receive OTP? &nbsp;
                     <span>
-                        <Link to='/signup' className="link-bottom-btn">Signup</Link>
+                        <Link to='/signup' className="link-bottom-btn">Resend</Link>
                     </span>
                 </span>
             </div>

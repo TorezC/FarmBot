@@ -62,9 +62,9 @@ const Login = () => {
             </div>
           <Link className="link-right" to='forgot-password' >Forgot Password?</Link>
           </div>
-          <button className="click-btn">Login</button>
+          <button className="click-btn login-btn">Login</button>
         </form>
-        <span className="link-bottom">New to Farm Support? 
+        <span className="link-bottom">New to Farm Support? &nbsp;
           <span>
             <Link to='/signup' className="link-bottom-btn">
             Signup

@@ -23,7 +23,7 @@ const Signup = () => {
         <div>
           <img className="logo" src={logo} alt="logo" />
         </div>
-        <h5>Signup</h5>
+        <h5>Sign Up</h5>
         <p>Create an account</p>
         <div></div>
         <button className="btn flex">
@@ -61,16 +61,16 @@ const Signup = () => {
               <i onClick={handleVisibility} class={passwordIcon}></i>
             </div>
           </div>
-          <button className="click-btn">Signup</button>
+          <button className="click-btn signup-btn">Sign Up</button>
         </form>
         <span className="link-bottom">
-          Already a user?
+          Already a user? &nbsp;
           <Link to="/" className="link-bottom-btn">
             Login
           </Link>
         </span>
         <div className="link-bottom">
-          By clicking signup you agree to Farmer Support
+          By clicking signup you agree to Farmer <br />Support
            <Link className="link-bottom-btn" style={{'text-decoration': 'underline'}}> Terms of Privacy & Policy</Link>
         </div>
       </div>
