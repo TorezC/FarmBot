@@ -61,7 +61,7 @@ const Login = () => {
               />
               <i onClick={handleVisibility} class={passwordIcon}></i>
             </div>
-          <Link className="link-right" to='forgot-password' >Forgot Password?</Link>
+          <Link className="link-right" to='/resetPassword'  >Forgot Password?</Link>
           </div>
           <button className="click-btn login-btn">Login</button>
         </form>
