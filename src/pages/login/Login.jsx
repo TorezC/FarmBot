@@ -64,11 +64,13 @@ const Login = () => {
           </div>
           <button className="click-btn">Login</button>
         </form>
-        <span className="link-bottom">New to Farm Support? <span>
+        <span className="link-bottom">New to Farm Support? 
+          <span>
             <Link to='/signup' className="link-bottom-btn">
             Signup
             </Link>
-            </span> </span>
+          </span>
+        </span>
       </div>
     </div>
   );
