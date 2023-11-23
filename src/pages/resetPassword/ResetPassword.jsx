@@ -1,7 +1,6 @@
 import React from 'react'
 import { useState } from "react";
 import logo from "../../assets/logo.svg";
-// import './otpVerification.css'
 import { Link } from "react-router-dom";
 
 const ResetPassword = () => {
@@ -23,8 +22,10 @@ const ResetPassword = () => {
             <div>
                 <img className="logo" src={logo} alt="logo" />
             </div>
-            <h5>Reset your password</h5>
-            <p>Almost done. Enter your new password and you're good to go.</p>
+            <div className="note-header">
+                <h5>Reset your password</h5>
+                <p>Almost done. Enter your new password <br /> and you're good to go.</p>
+            </div>
             <form>
                 <div className="form-container flex">
                     <label htmlFor="password">New Password</label>
@@ -50,13 +51,18 @@ const ResetPassword = () => {
                     <i onClick={handleVisibility} class={passwordIcon}></i>
                     </div>
                 </div>
-                <button className="click-btn signup-btn">Reset Password</button>
-            </form>
-            <span className="link-bottom">
-                <Link to="/" className="link-bottom-btn">
-                    Return to Login
+                <Link to="/confirmPassword">
+                    <button className="click-btn signup-btn">Reset Password</button>
                 </Link>
-            </span>
+            </form>
+            <div className="return-btn-head">
+                <span className="link-bottom">
+                    <Link to="/" className="link-bottom-btn return-btn">
+                        <i class="fa-solid fa-arrow-left"></i>
+                        Return to Login
+                    </Link>
+                </span>
+            </div>
         </div>
     </div>
   )

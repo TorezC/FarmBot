@@ -25,7 +25,7 @@ const Login = () => {
         </div>
         <h5>Welcome Back</h5>
         <p>Login in to your account</p>
-        <div></div>
+        <div className="btn-header">
         <button className="btn flex">
           <img src={google} alt="google" />
           <p>Signup with Google</p>
@@ -38,6 +38,7 @@ const Login = () => {
           <img src={facebook} alt="facebook" />
           <p>Signup with Facebook</p>
         </button>
+        </div>
         <p className="or">OR</p>
         <form>
           <div className="form-container flex">
