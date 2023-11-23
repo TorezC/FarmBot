@@ -5,18 +5,16 @@ a{
     text-decoration: none;
 }
 .auth-container{
-    margin:150px auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    text-align: center;
-    /* overflow: hidden; */
+    margin:100px 0;
 }
 .container{
+    width:500px;
+    margin:0 auto;
     display: flex;
     flex-direction: column;
     padding: 20px;
+    align-items:center;
+    justify-content:center;
 }
 .container > h5{
     font-weight: 500;
@@ -47,6 +45,7 @@ a{
     font-family:'Montserrat';
     font-weight:500;
     transition:all .2s ease-in-out;
+    width:100%;
 }
 .btn img{width:24px;height:24px;}
 .signup-btn,.login-btn{margin-top:20px;}
@@ -73,7 +72,7 @@ label{
 .input-holder{
     margin-top: 5px;
     border-radius: 6px;
-    padding: 16px;
+    padding: 13px;
     border: 1px solid rgba(105, 105, 105, 1);
     font-family:'Montserrat';
     font-size:calc(1rem - 2px);
@@ -118,6 +117,7 @@ label{
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-size: 12px;
+    text-align:center;
 }
 .link-bottom-btn{
     color: #2E7D32;
