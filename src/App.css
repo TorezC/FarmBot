@@ -5,7 +5,7 @@ a{
     text-decoration: none;
 }
 .auth-container{
-    margin:100px auto;
+    margin:150px auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,7 +22,6 @@ a{
     font-weight: 500;
     font-size:2rem;
     color: #151515;
-    margin:0
 }
 .logo{
     width: 100px;
@@ -31,12 +30,13 @@ a{
 .container > p{
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
-    font-size: 10px;
-    color: #151515;
+    font-size: 1rem;
+    color:rgba(21, 21, 21, 1);
+    margin:10px 0 50px;
 }
 .btn{
-    padding: 5px 100px;
-    margin-bottom: 16px;
+    padding: 10px 100px;
+    margin-bottom: 20px;
     border-radius: 8px;
     border: 1px solid #151515; 
     justify-content: center;
@@ -44,8 +44,14 @@ a{
     gap: 16px;
     color: #121212;
     background: #ffff;
+    font-family:'Montserrat';
+    font-weight:500;
+    transition:all .2s ease-in-out;
 }
+.btn img{width:24px;height:24px;}
+.signup-btn,.login-btn{margin-top:20px;}
 .or{
+    margin:10px 0!important;
     padding: 4px 0;
     font-family: 'Montserrat', sans-serif;
 }
@@ -60,20 +66,23 @@ form{
 }
 label{
     color:#353535;
-    font-size: 12px;
+    font-size: 1rem;
     font-weight: 500;
+    font-family:'Montserrat';
 }
 .input-holder{
     margin-top: 5px;
     border-radius: 6px;
     padding: 16px;
-    border: 1px solid #696969;
+    border: 1px solid rgba(105, 105, 105, 1);
+    font-family:'Montserrat';
+    font-size:calc(1rem - 2px);
 }
 .password{
     position: relative;
 }
 .password > input{
-    width: 90%;
+    width: 100%;
 }
 .icon{
     color:#585858;
@@ -95,12 +104,17 @@ label{
     color: #fff;
     border: none;
     width: 100%;
-    padding: 10px;
+    padding: 10px 100px ;
     border-radius: 6px;
     font-size: 15px;
+    border:1px solid transparent;
+    font-family:'Poppins';
+    font-size:calc(1rem);
+    transition:all .2s ease-in-out;
+    font-weight:500;
 }
 .link-bottom{
-    margin: 7px 0;
+    margin: 12px 0;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-size: 12px;
