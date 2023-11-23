@@ -1,8 +1,7 @@
-.otp-note{margin-top:30px;}
+/* .otp-note{margin-top:30px;} */
 .otp-note h5{font-size:2rem;color:rgba(21, 21, 21, 1);font-weight:500;}
-.otp-flex{margin-top:0;margin-bottom:0;}
 .otp-description{margin-top:10px;}
-.otp-description p{font-family:'Montserrat';font-weight:400;font-size:1rem;color:rgba(21, 21, 21, 1)}
+.otp-description p{font-family:'Montserrat';font-weight:400;font-size:1rem;color:rgba(21, 21, 21, 1);text-align:center;}
 .input-otp{display:flex;align-items:center;margin-top:30px;}
 .input-otp span input{width:60px;height:60px;margin:0 10px;border-radius:8px;border:1px solid rgba(205, 205, 205, 1);}
 .input-otp span input{text-align:center;font-size:2rem;color:rgba(21, 21, 21, 1);}

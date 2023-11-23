@@ -14,8 +14,8 @@ const OtpVerification = () => {
                 <h5>OTP Verification</h5>
             </div>
             <div className="otp-description">
-                <p>Please enter the 6 digit code sent <br />
-                    <span>to John***@gmail.com</span>
+                <p>Please enter the 6 digit code sent to <br />
+                    <span>John***@gmail.com</span>
                 </p>
             </div>
             <div className="input-otp">
