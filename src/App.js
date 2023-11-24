@@ -6,6 +6,7 @@ import OtpVerification from './pages/otpVerification/OtpVerification';
 import ResetPassword from './pages/resetPassword/ResetPassword';
 
 import ForgotPassword from './pages/forgotPassword/ForgotPassword';
+import PageNotFound from './pages/pagenotfound/PageNotFound';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path='/otp' element={<OtpVerification/>} />
         <Route path='/forgotPassword' element={<ForgotPassword/>} />
         <Route path='/resetPassword' element={<ResetPassword/>} />
+        <Route path='*' element={<PageNotFound/>} />
       </Routes>
     </BrowserRouter>
   );
