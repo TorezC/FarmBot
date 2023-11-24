@@ -9,10 +9,3 @@
 .input-otp span:first-child input{margin-left:0;}
 .input-otp span:last-child input{margin-right:0;}
 .receive-otp{margin-top:20px;}
-@media screen and (max-width:500px) {
-    .input-otp span input{width:40px;height:40px;margin:0 5px;}
-}
-@media screen and (max-width:300px) {
-    .otp-note h5{text-align:center;}
-    .input-otp span input{width:30px;height:30px;margin:0 3px;}
-}
