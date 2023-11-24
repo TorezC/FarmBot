@@ -1,5 +1,4 @@
 import React from 'react'
-import './forgotPassword.css'
 import logo from '../../assets/logo.svg'
 import { Link } from 'react-router-dom'
 
