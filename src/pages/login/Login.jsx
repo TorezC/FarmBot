@@ -1,22 +1,11 @@
-import { useState } from "react";
 import logo from "../../assets/logo.svg";
 import google from "../../assets/google.svg";
 import apple from "../../assets/apple.svg";
 import facebook from "../../assets/facebook.svg";
 import { Link } from "react-router-dom";
+import Password from "../../components/Password";
 const Login = () => {
-  const [passwordVisibility, setPasswordVisibility] = useState('password');
-  const [passwordIcon, setPasswordIcon] = useState("fal fa-eye icon");
-
-  const handleVisibility = () => {
-    if (passwordIcon === "fal fa-eye icon") {
-      setPasswordIcon("fal fa-eye-slash icon");
-      setPasswordVisibility('text');
-    } else if (passwordIcon === "fal fa-eye-slash icon") {
-      setPasswordIcon("fal fa-eye icon");
-      setPasswordVisibility('password');
-    }
-  };
+  
   return (
     <div className="auth-container">
       <div className="container">
@@ -52,16 +41,8 @@ const Login = () => {
           </div>
           <div className="form-container flex">
             <label htmlFor="password">Password</label>
-            <div className="password">
-              <input
-                className="input-holder"
-                type={passwordVisibility}
-                placeholder="******"
-                id="password"
-              />
-              <i onClick={handleVisibility} class={passwordIcon}></i>
-            </div>
-          <Link className="link-right" to='/resetPassword'  >Forgot Password?</Link>
+           <Password/>
+          <Link className="link-right" to='/forgotPassword'  >Forgot Password?</Link>
           </div>
           <button className="click-btn login-btn">Login</button>
         </form>

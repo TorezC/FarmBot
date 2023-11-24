@@ -1,6 +1,6 @@
 import React from 'react'
-import logo from "../../assets/logo.svg";
-import confirmReset from "../../assets/confirmReset.svg";
+import logo from "../assets/logo.svg";
+import confirmReset from "../assets/confirmReset.svg";
 import { Link } from 'react-router-dom';
 
 const ConfirmPassword = () => {
