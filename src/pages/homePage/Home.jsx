@@ -39,13 +39,13 @@ const Home = () => {
             </ul>
           </div>
           <div className="login-signup-head">
-            <div className="signup">
+            <div className="login">
               <Link to="/">
                 <button type="button">Log In</button>
               </Link>
             </div>
-            <div className="login">
-              <Link to="/">
+            <div className="signup">
+              <Link to="/signup">
                 <button type="button">Sign Up</button>
               </Link>
             </div>

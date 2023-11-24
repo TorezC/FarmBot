@@ -6,7 +6,6 @@
 .nav-list ul li a{color:#696969;font-size:calc(1rem);transition:all .2s ease-in-out;}
 .nav-list ul li a:hover{font-weight:500;}
 .nav-list ul li:first-child a{color:#2E7D32;}
-/* .nav */
 .signup a button,.login a button{padding:10px 25px;margin:0 10px;transition:all .2s ease-in-out;border:1.5px solid #2E7D32;}
 .signup a button,.login a button{border-radius:30px;font-family:inherit;font-weight:500;color:#2E7D32;background-color:transparent;}
 .signup a button:hover,.login a button:hover{background-color:#2E7D32;color:#FEFEFEFE;}
