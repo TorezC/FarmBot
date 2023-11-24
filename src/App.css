@@ -142,7 +142,11 @@ form,.btn-header{width:400px;}
 .return-btn i{margin-right:8px;position:relative;transition:all .2s ease-in-out;}
 .return-btn:hover i{transform:translateX(-5px);}
 .note-header{text-align:center;}
- 
+ .goback{
+    font-size: 20px;
+    color: #2E7D32;
+    font-weight: 500;
+ }
 /* media queries */
 @media screen and (max-width: 500px){
     .btn{padding: 10px 70px;}
