@@ -91,7 +91,7 @@ const Home = () => {
       <main className="main-body">
         <div className="main-header">
           <div className="what-we-do-head">
-            <p>What We Offer</p>
+            <p>What We Offe</p>
             <p>Cultivating Success Through Innovation</p>
           </div>
         </div>
