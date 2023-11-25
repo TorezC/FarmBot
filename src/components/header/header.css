@@ -59,6 +59,6 @@
     .numbers-list{width:90%;margin:0 auto;height:auto;padding:20px 0;}
     .numbers-list ul li span{font-size:1rem;}
 
-    /* .login-sign-list.show{right:0;} */
+    .show{right:0;}
     .footer-header{flex-direction:column;}
 }

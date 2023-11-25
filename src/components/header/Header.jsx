@@ -1,8 +1,15 @@
 import { Link } from 'react-router-dom'
 import './header.css'
 import logo from '../../assets/logo.svg'
+import { useState } from 'react'
 
 const Header = () => {
+    const [toggle, setToggle] = useState(false);
+
+    const handleToggle = () => {
+        setToggle(!toggle)
+    }
+
   return (
     <>
     <nav>
@@ -11,17 +18,17 @@ const Header = () => {
             <img src={logo} alt="logo" />
           </Link>
           <span className="menu-home">
-            <button type="button" className="menubtn">
+            <button type="button" onClick={handleToggle} className="menubtn">
               <i className="fa-solid fa-bars"></i>
             </button>
           </span>
         </div>
-        <div className="login-sign-list">
+        <div className={toggle ? "login-sign-list show" : "login-sign-list"}>
           <div className="nav-sign-login-header">
               <div className="nav-list">
                 <ul>
                   <div className="close-btn-head">
-                    <button type="button" className="close-btn">
+                    <button type="button" onClick={handleToggle} className="close-btn">
                       <i className="fa-solid fa-xmark"></i>
                     </button>
                   </div>
@@ -44,7 +51,7 @@ const Header = () => {
               </div>
               <div className="login-signup-head">
                   <div className="login">
-                      <Link to="/">
+                      <Link to="/login">
                       <button type="button">Log In</button>
                       </Link>
                   </div>
