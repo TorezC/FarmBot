@@ -1,5 +1,4 @@
 import React from 'react'
-import logo from '../../assets/logo.svg'
 import aboutUS from '../../assets/aboutUs.jpg'
 import navigate from '../../assets/navigate.png'
 import adapt from '../../assets/adapt.png'
@@ -11,56 +10,14 @@ import james from '../../assets/james.png'
 import adebayo from '../../assets/adebayo.png'
 import { Link } from 'react-router-dom'
 import './home.css'
+import Header from '../../components/header/Header'
+import Footer from '../../components/footer/Footer'
 
 const Home = () => {
   return (
     <div>
     <header className="top-header">
-      <nav>
-        <div className="header-logo">
-          <Link to="/" className="link-bottom-btn">
-            <img src={logo} alt="logo" />
-          </Link>
-          <span style={{'display':'none'}}>
-            <button type="button">
-              <i className="fa-solid fa-bars"></i>
-            </button>
-          </span>
-        </div>
-        <div className="nav-sign-login-header">
-            <div className="nav-list">
-                <ul>
-                    <li>
-                    <Link to="/">Home</Link>
-                    </li>
-                    <li>
-                    <Link to="/">What we do</Link>
-                    </li>
-                    <li>
-                    <Link to="/">About Us</Link>
-                    </li>
-                    <li>
-                    <Link to="/">Blog</Link>
-                    </li>
-                    <li>
-                    <Link to="/">Contact Us</Link>
-                    </li>
-                </ul>
-            </div>
-            <div className="login-signup-head">
-                <div className="login">
-                    <Link to="/">
-                    <button type="button">Log In</button>
-                    </Link>
-                </div>
-                <div className="signup">
-                    <Link to="/signup">
-                    <button type="button">Sign Up</button>
-                    </Link>
-                </div>
-            </div>
-        </div>
-      </nav>
+      <Header/>
       <div className="home-header">
         <div className="hero-section">
           <div className="hero-one hero">
@@ -470,121 +427,7 @@ const Home = () => {
             </div>
         </div>
     </main>
-    <footer className="footer-body">
-        <div className="footer-head">
-            <div className="footer-header">
-                <div className="logo-footer">
-                    <div className="footer-logo">
-                        <img src={logo} alt="logo" />
-                    </div>
-                    <div className="footer-note">
-                        <p>
-                            FarmBot is a  platform dedicated to <br /> empower 
-                            farmers worldwide by providing <br /> them with the 
-                            tools and knowledge needed <br /> to make informed decisions.
-                        </p>
-                    </div>
-                    <div className="follow-us-head">
-                        <p>Follow us on</p>
-                        <div className="follow-link">
-                            <ul>
-                                <li>
-                                    <Link to="/">
-                                        <button type="button">
-                                            <i className="fa-brands fa-facebook-f"></i>
-                                        </button>
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link to="/">
-                                        <button type="button">
-                                            <i className="fa-brands fa-instagram"></i>
-                                        </button>
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link to="/">
-                                        <button type="button">
-                                            <i className="fa-brands fa-twitter"></i>
-                                        </button>
-                                    </Link>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div className="all-links-contact-header">
-                    <div className="links-header all-links">
-                        <p>Links</p>
-                        <ul>
-                            <li>
-                                <Link>Home</Link>
-                            </li>
-                            <li>
-                                <Link>What we do</Link>
-                            </li>
-                            <li>
-                                <Link>About Us</Link>
-                            </li>
-                            <li>
-                                <Link>Blog</Link>
-                            </li>
-                            <li>
-                                <Link>Contact Us</Link>
-                            </li>
-                        </ul>
-                    </div>
-                    <div className="contact-header all-links">
-                        <p>Contact Us</p>
-                        <ul>
-                            <li>
-                                <Link to="tel:+1110002342">
-                                    <span><i className="fa-solid fa-phone"></i></span> &nbsp;
-                                    +111 000 2342
-                                </Link>
-                            </li>
-                            <li>
-                                <Link to="mailto:Info@farmbot.com">
-                                    <span><i className="fa-solid fa-envelope"></i></span> &nbsp;
-                                    Info@farmbot.com
-                                </Link>
-                            </li>
-                            <li>
-                                <Link to="/">
-                                    <span><i className="fa-solid fa-location-dot"></i></span> &nbsp;
-                                    No.111 Suit Avenue Lagos
-                                </Link>
-                            </li>
-                        </ul>
-                    </div>
-                    <div className="help-header all-links">
-                        <p>Links</p>
-                        <ul>
-                            <li>
-                                <Link>Privacy Policy</Link>
-                            </li>
-                            <li>
-                                <Link>Terms & Conditions</Link>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div className="subscribe-header">
-                <form>
-                    <div className="sub-header">
-                        <div className="sub-head">
-                            <p>Subscribe to get latest updates on our offers</p>
-                        </div>
-                        <div className="fill-form-head">
-                            <input type="text" placeholder="Enter Email" />
-                            <button type="submit">Subscribe</button>
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </footer>
+    <Footer/>
   </div>
   )
 }
