@@ -13,3 +13,52 @@
 .signup{margin-right:0;}
 .login{margin-left:0;}
 .login-signup-head{display:flex;align-items:center;margin-left:100px;}
+.close-btn-head,.menu-home{display:none;}
+
+@media screen and (min-width:769px) and (max-width:1024px){
+    .top-header nav{padding:15px 25px;}
+    .login-signup-head{margin-left:25px;}
+    .nav-list ul li{margin:0 10px;}
+    .signup a button{margin-right:0;}
+    .signup a button, .login a button{font-size:calc(1rem - 4px);}
+}
+@media screen and (min-width:769px) and (max-width:850px){
+    .nav-list ul li a{font-size:calc(1rem - 3px);}
+    .signup a button, .login a button{padding:5px 15px;}
+}
+@media screen and (max-width:768px) {
+    .top-header nav{padding:20px 0px;position:relative;}
+    .nav-sign-login-header{height:100vh;width:50%;background-color:#2E7D32;justify-content:initial;margin-left:auto;}
+    .nav-sign-login-header{padding:65px 0 0 15px;}
+    .login-sign-list{position:absolute;width:100%;top:0;background-color:rgba(0, 0, 0, 0.65);}
+    .login-sign-list{right:999px;transition:all .3s ease-in-out;}
+    .nav-list ul,.login-signup-head,.top-header nav,.nav-sign-login-header{flex-direction:column;align-items:flex-start;}
+    .login-signup-head{margin-left:0;}
+    .nav-list ul li{margin:10px 0;}
+    .signup a button, .login a button{margin:10px 0px;}
+    .menu-home{display:block;}
+    .header-logo{display:flex;align-items:center;justify-content:space-between;width:100%;}
+    .header-logo{padding:0 20px;}
+    .menubtn{background-color:transparent;border:none;}
+    .menubtn i{font-size:2rem;color:#2E7D32;}
+    .hero-section{padding:0 20px;}
+    .get-started-btn{padding:15px 40px;}
+    .nav-list ul li a,.signup a button, .login a button{color:#FEFEFEFE;}
+    .signup a button, .login a button{border:1.5px solid #FEFEFEFE;}
+    .nav-list ul li a::after{background-color:#FEFEFEFE;}
+    .signup a button:hover,.login a button:hover{background-color:#FEFEFEFE;color:#2E7D32;}
+    .nav-list ul li:first-child a{color:#FEFEFEFE;font-weight:500;}
+    .nav-list ul{position:relative;}
+    .close-btn-head{display:block;position:relative;left:100%;}
+    .close-btn-head{width:100%;display:flex;align-items:center;justify-content:flex-end;padding:0 15px 0 0;margin-bottom:15px;}
+    .close-btn{border:none;background-color:transparent;}
+    .close-btn i{font-size:2rem;color:#FEFEFEFE;}
+    .close-btn:hover,.menubtn:hover{background-color:transparent;border:none;}
+    .numbers-list ul li{padding:0 7px;}
+    .numbers-list ul li p{font-size:1.5rem;}
+    .numbers-list{width:90%;margin:0 auto;height:auto;padding:20px 0;}
+    .numbers-list ul li span{font-size:1rem;}
+
+    /* .login-sign-list.show{right:0;} */
+    .footer-header{flex-direction:column;}
+}
