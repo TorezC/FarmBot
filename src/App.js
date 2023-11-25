@@ -4,7 +4,6 @@ import Login from './pages/login/Login';
 import Signup from './pages/signup/Signup';
 import OtpVerification from './pages/otpVerification/OtpVerification';
 import ResetPassword from './pages/resetPassword/ResetPassword';
-
 import ForgotPassword from './pages/forgotPassword/ForgotPassword';
 import PageNotFound from './pages/pagenotfound/PageNotFound';
 import Home from './pages/homePage/Home'
