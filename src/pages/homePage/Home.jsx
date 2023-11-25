@@ -15,7 +15,7 @@ import Footer from '../../components/footer/Footer'
 
 const Home = () => {
   return (
-    <div>
+    <div className="fixed">
     <header className="top-header">
       <Header/>
       <div className="home-header">
