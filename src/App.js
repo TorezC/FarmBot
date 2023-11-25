@@ -7,6 +7,7 @@ import ResetPassword from './pages/resetPassword/ResetPassword';
 import ForgotPassword from './pages/forgotPassword/ForgotPassword';
 import PageNotFound from './pages/pagenotfound/PageNotFound';
 import Home from './pages/homePage/Home'
+import ContactUs from './pages/contactus/ContactUs';
 
 function App() {
   return (
@@ -17,8 +18,9 @@ function App() {
         <Route path='/otp' element={<OtpVerification/>} />
         <Route path='/forgotPassword' element={<ForgotPassword/>} />
         <Route path='/resetPassword' element={<ResetPassword/>} />
-        <Route path='*' element={<PageNotFound/>} />
         <Route path='/home' element={<Home/>} />
+        <Route path='/contact-us' element={<ContactUs/>} />
+        <Route path='*' element={<PageNotFound/>} />
       </Routes>
     </BrowserRouter>
   );
