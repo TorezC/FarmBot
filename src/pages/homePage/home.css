@@ -106,7 +106,7 @@
 
 
 @media screen and (max-width:768px){
-    /* .fixed{position:fixed;} */
+    /* body.fixed{position:fixed;} */
     .hero-one h1{font-size:2.5rem;}
     .hero-one h1 br{display:none;}
     .main-header{width:95%;margin:0 auto 100px;}
