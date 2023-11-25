@@ -33,3 +33,27 @@
 .subscribe-header form button{border-radius:0px 8px 8px 0;border-left:none;}
 .sub-header{display:flex;flex-direction:column;align-items:flex-end;}
 .sub-head p{font-family:'Montserrat';font-weight:500;font-size:calc(1rem + 2px);color:#151515;}
+.mobile-follow{display:none;}
+@media screen and (min-width:769px) and (max-width:1024px) {
+    .footer-header{flex-direction:column;}
+    .footer-note p br{display:none;}
+    .all-links-contact-header{margin-top:20px;}
+}
+@media screen and (max-width:768px) {
+    .footer-note p br{display:none;}
+    .logo-footer{margin-right:0;}
+    .all-links-contact-header{flex-direction:column;margin-top:20px;}
+    .all-links{margin-left:0;}
+    .sub-header{align-items:initial;}
+    .subscribe-header{margin:0 0 30px;}
+    .footer-head{display:flex;flex-direction:column-reverse;padding:50px 0;}
+    .mobile-follow{text-align:center;}
+    .web-follow{display:none;}
+    .mobile-follow{display:block;}
+    .mobile-follow ul{justify-content:center;}
+    .subscribe-header form input{width:100%;}
+}
+@media screen and (max-width:400px) {
+    .subscribe-header form button{font-size:1rem;}
+    .subscribe-header form input{width:100%;}
+}

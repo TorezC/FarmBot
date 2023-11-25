@@ -18,7 +18,7 @@ const Footer = () => {
                 needed <br /> to make informed decisions.
               </p>
             </div>
-            <div className="follow-us-head">
+            <div className="follow-us-head web-follow">
               <p>Follow us on</p>
               <div className="follow-link">
                 <ul>
@@ -107,6 +107,34 @@ const Footer = () => {
                   <Link>Terms & Conditions</Link>
                 </li>
               </ul>
+            </div>
+            <div className="follow-us-head mobile-follow">
+              <p>Follow us on</p>
+              <div className="follow-link">
+                <ul>
+                  <li>
+                    <Link to="/">
+                      <button type="button">
+                        <i className="fa-brands fa-facebook-f"></i>
+                      </button>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/">
+                      <button type="button">
+                        <i className="fa-brands fa-instagram"></i>
+                      </button>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/">
+                      <button type="button">
+                        <i className="fa-brands fa-twitter"></i>
+                      </button>
+                    </Link>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
