@@ -50,7 +50,7 @@
     .nav-list ul li:first-child a{color:#FEFEFEFE;font-weight:500;}
     .nav-list ul{position:relative;}
     .close-btn-head{display:block;position:relative;left:100%;}
-    .close-btn-head{width:100%;display:flex;align-items:center;justify-content:flex-end;padding:0 15px 0 0;margin-bottom:15px;}
+    .close-btn-head{display:flex;align-items:center;justify-content:flex-end;padding:0 15px 0 0;margin-bottom:15px;}
     .close-btn{border:none;background-color:transparent;}
     .close-btn i{font-size:2rem;color:#FEFEFEFE;}
     .close-btn:hover,.menubtn:hover{background-color:transparent;border:none;}

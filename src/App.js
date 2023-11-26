@@ -8,6 +8,7 @@ import ForgotPassword from './pages/forgotPassword/ForgotPassword';
 import PageNotFound from './pages/pagenotfound/PageNotFound';
 import Home from './pages/homePage/Home'
 import ContactUs from './pages/contactus/ContactUs';
+import AboutUs from './pages/aboutus/AboutUs'
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path='/forgotPassword' element={<ForgotPassword/>} />
         <Route path='/resetPassword' element={<ResetPassword/>} />
         <Route path='/contact-us' element={<ContactUs/>} />
+        <Route path='/about-us' element={<AboutUs/>} />
         <Route path='*' element={<PageNotFound/>} />
       </Routes>
     </BrowserRouter>

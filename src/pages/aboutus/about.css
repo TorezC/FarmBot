@@ -1,0 +1,7 @@
+.home-header-about{background:linear-gradient(rgba(0, 0, 0, .65) ,rgba(0, 0, 0, 0.65)),url(../../assets/about-banner.png)!important;width:100%;}
+.home-header-about{background-repeat:no-repeat;background-size:cover;background-position:center;}
+.home-header-about{position:relative;z-index:1;padding:70px 0 150px;}
+.hero-section{display:flex;align-items:center;flex-direction:column;}
+.hero p,.hero h1{color:#FEFEFE;text-align:center;}
+.hero-one h1{font-size:3rem;font-weight:600;}
+.hero-two p{font-family:'Montserrat';font-weight:500;font-size:calc(1rem + 4px);}
