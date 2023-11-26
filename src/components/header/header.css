@@ -4,6 +4,7 @@
 .nav-list ul{display:flex;align-items:center;}
 .nav-list ul li{margin:0 15px;list-style:none;position:relative;}
 .nav-list ul li a{color:#696969;font-size:calc(1rem);position:relative;}
+.nav-list ul li a:hover{color:#2E7D32;}
 .nav-list ul li a::after{content:"";width:0%;height:2px;display:block;background-color:#2E7D32;transition:all .3s ease-in-out}
 .nav-list ul li a:hover::after{width:100%;}
 .nav-list ul li:first-child a{color:#2E7D32;font-weight:500;}

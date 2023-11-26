@@ -4,9 +4,9 @@
   width: 100%;
 }
 .home-header-contact {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background-repeat: no-repeat!important;
+  background-size: cover!important;
+  background-position: center!important;
 }
 .home-header-contact {
   position: relative;
@@ -57,4 +57,5 @@ iframe{height:500px;}
   .form-contact-us-header{width:100%;}
   .form-header{padding:60px 0 50px;}
   .main-body{padding-bottom:50px;}
+  .message-description p:first-child{font-size:2rem;}
 }
