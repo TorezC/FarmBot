@@ -26,7 +26,7 @@
 .offer-header{margin:100px 0 20px;}
 .offer-flex{display:grid;grid-template-columns:repeat(auto-fit, minmax(350px, 1fr));width:90%;margin:0 auto;}
 .offer-card{padding:25px 50px;margin:0 25px 50px;display:flex;flex-direction:column;}
-.offer-card{border-radius:8px;background-color:#FFFFFF;box-shadow: -1px 4px 20px 1px #AFAFB11A;}
+.offer-card{border-radius:8px;background-color:#FFFFFF;border:1px solid #696969;}
 .card-icon{background-color:#D5E5D6;width:70px;height:70px;display:flex;align-items:center;justify-content:center;border-radius:50%;}
 .card-note{margin-top:20px;}
 .card-note p{color:#151515;}
