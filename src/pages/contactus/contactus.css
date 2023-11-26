@@ -57,5 +57,6 @@ iframe{height:500px;}
   .form-contact-us-header{width:100%;}
   .form-header{padding:60px 0 50px;}
   .main-body{padding-bottom:50px;}
-  .message-description p:first-child{font-size:2rem;}
+  .message-description p:first-child,.location-description p:first-child{font-size:2rem;}
+  .location-description p:first-child{margin-bottom:15px;}
 }
