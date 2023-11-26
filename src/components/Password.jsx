@@ -21,7 +21,7 @@ const Password = () => {
         placeholder="******"
         id="password"
       />
-      <i onClick={handleVisibility} class={passwordIcon}></i>
+      <i onClick={handleVisibility} className={passwordIcon}></i>
     </div>
   );
 };

@@ -71,7 +71,7 @@ const ContactUs = () => {
                       to assist you with any inquiries or concerns you may have.</p>
                   </div>
                   <div className="fill-form-header">
-                    <form>
+                    <form className="fill-form">
                       <div className="form-container flex fill-form">
                         <label htmlFor="full-name">Full Name</label>
                         <input
