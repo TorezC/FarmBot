@@ -35,7 +35,7 @@
 .fill-form{margin-bottom:30px;}
 .fill-form input{width:100%;}
 .fill-form textarea{resize:none;}
-form{width:100%;}
+.fill-form{width:100%;}
 .location-header{width:90%;margin:100px auto 50px;}
 .location-head{margin-bottom:50px;}
 .location-description{text-align:center;}
