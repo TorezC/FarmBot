@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import './profile.css'
 import profileImage from '../../assets/profileImage.png'
 import profileLogo from '../../assets/profileLogo.svg'
+import { Link } from 'react-router-dom'
+
 const Profile = () => {
     const [passwordVisibility, setPasswordVisibility] = useState("password");
     const [passwordIcon, setPasswordIcon] = useState("fal fa-eye icon");
@@ -22,6 +24,11 @@ const Profile = () => {
                 <div className="profile-aside-head">
                     <div className="profile-logo-header">
                         <img src={profileLogo} alt="profileLogo" />
+                        <span className="menu-home profile-btn-head-bar">
+                            <button type="button" className="menubtn profile-btn-bar">
+                                <i className="fa-solid fa-bars"></i>
+                            </button>
+                        </span>
                     </div>
                     <div className="profile-menu-lists-header">
                         <p>MENU</p>
@@ -80,10 +87,12 @@ const Profile = () => {
                                     </button>
                                 </li>
                                 <li>
-                                    <button type="button">
-                                        <i className="fa-solid fa-right-from-bracket"></i>
-                                        <span>Logout</span>
-                                    </button>
+                                    <Link to="/login">
+                                        <button type="button">
+                                            <i className="fa-solid fa-right-from-bracket"></i>
+                                            <span>Logout</span>
+                                        </button>
+                                    </Link>
                                 </li>
                             </ul>
                         </div>
