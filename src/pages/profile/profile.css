@@ -95,7 +95,7 @@
 @media screen and (min-width:769px) and (max-width:900px){
     .profile-btn li button, .profile-settings-header ul li button{font-size:calc(1rem - 4px);}
 }
-@media screen and (max-width:768px) {
+@media screen and (max-width:768px){
     .profile-aside-header{position:relative;height:auto;overflow-y:hidden;}
     .profile-aside-head{height:auto;margin:20px auto;width:90%;}
     .profile-body-flex{flex-direction:column;}
@@ -111,9 +111,11 @@
     .basic-form input{width:100%;}
     .basic-fill-form,.details-fill-form{padding:0 20px;}
     .basic-note,.details-note{padding:0 0 0 20px;}
-    .profile-submit-flex{justify-content:space-between;}
+    .profile-submit-flex{justify-content:space-between;margin:0 0;}
     .profile-logo-header{display:flex;align-items:center;justify-content:space-between;}
     .profile-btn-bar i{color:#FFFFFF;}
     .profile-btn-head-bar{display:block;}
-    /* .profile-btn-head{display:flex;align-items:center;justify-content:center;} */
+}
+@media screen and (max-width:320px){
+    .profile-submit-flex button{font-size:1rem;padding:10px 20px;}
 }
