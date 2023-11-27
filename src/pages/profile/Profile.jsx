@@ -7,6 +7,7 @@ import { Link } from 'react-router-dom'
 const Profile = () => {
     const [passwordVisibility, setPasswordVisibility] = useState("password");
     const [passwordIcon, setPasswordIcon] = useState("fal fa-eye icon");
+    const [toggle, setToggle] = useState(false);
 
     const handleVisibility = () => {
         if (passwordIcon === "fal fa-eye icon") {
@@ -17,6 +18,14 @@ const Profile = () => {
         setPasswordVisibility("password");
         }
     };
+
+    const handleToggle = () => {
+        if(toggle === true){
+          setToggle(!toggle)
+        } else if(toggle === false) {
+          setToggle(!toggle)
+        }
+      }
     return (
     <div className="profile-container">
         <div className="profile-body-flex">
@@ -25,12 +34,12 @@ const Profile = () => {
                     <div className="profile-logo-header">
                         <img src={profileLogo} alt="profileLogo" />
                         <span className="menu-home profile-btn-head-bar">
-                            <button type="button" className="menubtn profile-btn-bar">
+                            <button type="button" className="menubtn profile-btn-bar" onClick={handleToggle}>
                                 <i className="fa-solid fa-bars"></i>
                             </button>
                         </span>
                     </div>
-                    <div className="profile-menu-lists-header">
+                    <div className={toggle ? "profile-menu-lists-header profile-btn-head-bar" : "profile-menu-lists-header "}>
                         <p>MENU</p>
                         <div className="profile-menu">
                             <ul className="profile-btn">
