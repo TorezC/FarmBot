@@ -12,8 +12,17 @@
 .what-img-header{display:flex;align-items:center;justify-content:center;}
 .what-img-header img{width:80%;}
 .our-team-header{margin:50px auto;width:100%;}
-.our-team-flex{display:grid;grid-template-columns:repeat(auto-fit, minmax(350px,1fr));}
-.team-header{margin:0 30px 50px;}
+/* .our-team-flex{display:grid;grid-template-columns:repeat(auto-fit, minmax(350px,1fr));} */
+.our-team-flex{display:flex;overflow-x:scroll;scroll-snap-type:inline mandatory;}
+.our-team-flex::-webkit-scrollbar{height:5px;}
+.our-team-flex::-webkit-scrollbar-thumb{background:#2E7D32;transition:all .5s ease-in-out;border-radius:8px;}
+.our-team-flex::-webkit-scrollbar-track{background:#151515;border-radius:8px;}
+.our-team-flex::-webkit-scrollbar-thumb:hover{background-color:#2E7D32;}
+
+.team-header{margin:0 15px 50px;}
+.team-header{min-width:calc(100% / 4);width:calc(100% / 4);scroll-snap-align:start;}
+.team-header:first-child{margin-left:0;}
+.team-header:last-child{margin-right:0;}
 .team-img{border-radius:64px 0 64px 0;}
 .team-img{position:relative;overflow:hidden;transition:all .3s ease-in-out;}
 .team-img figure{display:flex;}
@@ -33,10 +42,20 @@
 @media screen and (min-width:769px) and (max-width:1024px){
     .our-mission-header p:last-child, .who-we-are-header p:last-child, .meet-our-team-description p:last-child{font-size:calc(1rem);}
     .our-mission-header p:first-child, .who-we-are-header p:first-child, .meet-our-team-description p:first-child{font-size:2.5rem;}
+    .member-name{font-size:1.2rem;margin-bottom:5px;}
+    .team-member-details ul{margin-top:10px;}
+    .member-special{font-size:calc(1rem);}
+    .team-link i{font-size:1.2rem;}
 }
 @media screen and (max-width:768px) {
     .what-we-do-img-header{flex-direction:column-reverse;margin-bottom:50px;}
     .what-header, .what-img-header{width:100%;}
     .what-img-header{margin-bottom:40px;}
     .our-mission-header p:first-child, .who-we-are-header p:first-child, .meet-our-team-description p:first-child{font-size:2rem;}
+    .team-header{min-width:calc(100% / 1.5);width:calc(100% / 1.5);margin:0 10px 30px;}
+    .team-member-details ul{margin-top:10px;}
+    .member-name{font-size:1rem;margin-bottom:5px;}
+    .member-special{font-size:calc(1rem - 2px);}
+    .team-link i{font-size:1rem;}
+    .team-member-details ul li{margin:0 5px;}
 }
