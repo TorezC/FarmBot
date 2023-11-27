@@ -29,7 +29,7 @@ const Login = () => {
         </button>
         </div>
         <p className="or">OR</p>
-        <form>
+        <form action="/profile">
           <div className="form-container flex">
             <label htmlFor="email">Email Address</label>
             <input

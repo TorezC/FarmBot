@@ -74,8 +74,8 @@ const aboutUs = () => {
                       <img src={johnAlex1} alt="member" />
                       <figcaption>
                         <div className="team-member-details">
-                          <p className="member-name">John Alex</p>
-                          <span className="member-special">Agricultural Specialist</span>
+                          <p className="member-name">Racheal Ogbozor</p>
+                          <span className="member-special">Data Analyst</span>
                           <ul>
                             <li>
                               <Link to="/">
@@ -117,8 +117,8 @@ const aboutUs = () => {
                       <img src={johnAlex2} alt="member" />
                       <figcaption>
                         <div className="team-member-details">
-                          <p className="member-name">John Alex</p>
-                          <span className="member-special">Co Founder</span>
+                          <p className="member-name">Qudus Alabi</p>
+                          <span className="member-special">Frontend Developer</span>
                           <ul>
                             <li>
                               <Link to="/">
@@ -160,8 +160,94 @@ const aboutUs = () => {
                       <img src={johnAlex3} alt="member" />
                       <figcaption>
                         <div className="team-member-details">
-                          <p className="member-name">John Alex</p>
-                          <span className="member-special">Head of AI Development</span>
+                          <p className="member-name">Kalu Comfort</p>
+                          <span className="member-special">UI / UX Designer</span>
+                          <ul>
+                            <li>
+                              <Link to="/">
+                                <button type="button" className="team-link">
+                                  <i className="fa-brands fa-facebook"></i>
+                                </button>
+                              </Link>
+                            </li>
+                            <li>
+                              <Link to="/">
+                                <button type="button" className="team-link">
+                                  <i className="fa-brands fa-twitter"></i>
+                                </button>
+                              </Link>
+                            </li>
+                            <li>
+                              <Link to="/">
+                                <button type="button" className="team-link">
+                                  <i className="fa-brands fa-google"></i>
+                                </button>
+                              </Link>
+                            </li>
+                            <li>
+                              <Link to="/">
+                                <button type="button" className="team-link">
+                                  <i className="fa-brands fa-instagram"></i>
+                                </button>
+                              </Link>
+                            </li>
+                          </ul>
+                        </div>
+                      </figcaption>
+                    </figure>
+                  </div>
+                </div>
+                <div className="team-header">
+                  <div className="team-img">
+                    <figure>
+                      <img src={johnAlex1} alt="member" />
+                      <figcaption>
+                        <div className="team-member-details">
+                          <p className="member-name">Chidinma Njoku</p>
+                          <span className="member-special">Backend Developer</span>
+                          <ul>
+                            <li>
+                              <Link to="/">
+                                <button type="button" className="team-link">
+                                  <i className="fa-brands fa-facebook"></i>
+                                </button>
+                              </Link>
+                            </li>
+                            <li>
+                              <Link to="/">
+                                <button type="button" className="team-link">
+                                  <i className="fa-brands fa-twitter"></i>
+                                </button>
+                              </Link>
+                            </li>
+                            <li>
+                              <Link to="/">
+                                <button type="button" className="team-link">
+                                  <i className="fa-brands fa-google"></i>
+                                </button>
+                              </Link>
+                            </li>
+                            <li>
+                              <Link to="/">
+                                <button type="button" className="team-link">
+                                  <i className="fa-brands fa-instagram"></i>
+                                </button>
+                              </Link>
+                            </li>
+                          </ul>
+                        </div>
+                      </figcaption>
+                    </figure>
+                  </div>
+                </div>
+                <div className="team-header">
+                  <div className="team-img">
+                    <figure>
+                      <img src={johnAlex2} alt="member" />
+                      <figcaption>
+                        <div className="team-member-details">
+                          <p className="member-name">Victory Maduakor</p>
+                          <span className="member-special">Frontend Developer</span>
                           <ul>
                             <li>
                               <Link to="/">

@@ -9,6 +9,7 @@ import PageNotFound from './pages/pagenotfound/PageNotFound';
 import Home from './pages/homePage/Home'
 import ContactUs from './pages/contactus/ContactUs';
 import AboutUs from './pages/aboutus/AboutUs'
+import Profile from './pages/profile/Profile'
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path='/contact-us' element={<ContactUs/>} />
         <Route path='/about-us' element={<AboutUs/>} />
         <Route path='*' element={<PageNotFound/>} />
+        <Route path='/profile' element={<Profile/>} />
       </Routes>
     </BrowserRouter>
   );
