@@ -9,10 +9,8 @@ const Header = () => {
     const handleToggle = () => {
       if(toggle === true){
         setToggle(!toggle)
-        document.body.style.position = 'relative'
       } else if(toggle === false) {
         setToggle(!toggle)
-        document.body.style.position = 'fixed'
       }
     }
 
